@@ -1,0 +1,87 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>LINE応募</title> -->
+    <title>LINE応募</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+</head>
+
+<body>
+
+    <form class="w-75 mx-auto">
+
+        <p class="mt-3">以下を入力し、送信を押してください</p>
+        
+        <p class="mt-3">◆ お名前</p>
+        <div>
+            <textarea name="name" rows="1" cols="20" required></textarea>
+        </div>
+
+        <p class="mt-3">◆ ご自宅から通いやすい勤務地を確認しますので、郵便番号を教えて下さい</p>
+        <div>
+            <textarea name="adress" rows="1" cols="20" required></textarea>
+        </div>
+        
+        <p class="mt-3">◆ 電話番号を教えて下さい</p>
+        <div>
+            <textarea name="tel" rows="1" cols="20" required></textarea>
+        </div>
+
+        <p class="mt-3">◆ 年齢を教えて下さい</p>
+        <div>          
+        <select name="age">
+                <option value="未回答">選択してしてください</option>
+<option value="10代">10代</option>
+<option value="20代">20代</option>
+<option value="30代">30代</option>
+<option value="40代">40代以上</option>
+        </select></div>      
+
+        
+        <p class="mt-3">◆ 最も関心があることを教えて下さい</p>
+        <div> 
+        <INPUT TYPE="radio" NAME="kanshin" Value="特になし"> 特になし<BR>            
+            <INPUT TYPE="radio" NAME="kanshin" Value="ホール・接客"> ホール・接客<BR>            
+            <INPUT TYPE="radio" NAME="kanshin" Value="キッチン・調理"> キッチン・調理<BR> 
+            <INPUT TYPE="radio" NAME="kanshin" Value="ドリンク"> ドリンク<BR>
+            <INPUT TYPE="radio" NAME="kanshin" Value="洗い物"> 洗い物<BR>
+            <INPUT TYPE="radio" NAME="kanshin" Value="その他・分からない"> その他・分からない<BR>
+        </div>
+        
+        <p class="mt-3">◆ ご希望の連絡方法を教えて下さい</p>
+       
+            <div> <INPUT TYPE="radio" NAME="how" Value="電話希望"> 電話希望</div>     
+             <div><INPUT TYPE="radio" NAME="how" Value="LINEメッセージ希望"> LINEメッセージ希望</div>
+             <div><INPUT TYPE="radio" NAME="how" Value="どちらでもいい"> どちらでもいい</div>
+        
+        
+        <p class="mt-3">◆ ご希望の面談方法を教えて下さい</p>
+        <div> 
+            <INPUT TYPE="radio" NAME="where" Value="店舗での面談"> 本部での面談<BR>            
+            <INPUT TYPE="radio" NAME="where" Value="WEB面談"> WEB面談<BR> 
+            <INPUT TYPE="radio" NAME="where" Value="どちらでもいい"> どちらでもいい<BR>
+        </div>
+                
+        <p class="mt-3">◆ 面談希望日があれば、選択してください（任意）</p>
+        <div>
+            <input class="form-control w-100 mt-1" name="date" maxlength="10" type="date">
+        </div>
+                
+        <input type="submit" class="mt-4 btn btn-primary" value="送信" onclick="send()">
+                
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
+ 
+    <script src="liff.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
