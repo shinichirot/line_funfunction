@@ -7,6 +7,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+       <script language="JavaScript">
+ 
+    <!--
+    function change1() {
+        text1.style.color = "red";
+    }
+    //-->
+    </script>
+    
 </head>
 
 <body>
@@ -15,16 +24,11 @@
 
         <p class="mt-3">以下を入力し、送信を押してください</p>
         
-        <p class="mt-3">◆ お名前</p>
+        <p class="mt-3">◆ お名前</p> <span style="color:red;">(必須)</span>
         <div>
             <textarea name="name" rows="1" cols="20" required></textarea>
         </div>
 
-        <p class="mt-3">◆ ご自宅から通いやすい勤務地を確認しますので、郵便番号を教えて下さい</p>
-        <div>
-            <textarea name="adress" rows="1" cols="20" required></textarea>
-        </div>
-        
         <p class="mt-3">◆ 電話番号を教えて下さい</p>
         <div>
             <textarea name="tel" rows="1" cols="20" required></textarea>
@@ -40,22 +44,13 @@
 <option value="40代">40代以上</option>
         </select></div>      
 
-        
-        <p class="mt-3">◆ 最も関心があることを教えて下さい</p>
-        <div> 
-        <INPUT TYPE="radio" NAME="kanshin" Value="特になし"> 特になし<BR>            
-            <INPUT TYPE="radio" NAME="kanshin" Value="ホール・接客"> ホール・接客<BR>            
-            <INPUT TYPE="radio" NAME="kanshin" Value="キッチン・調理"> キッチン・調理<BR> 
-            <INPUT TYPE="radio" NAME="kanshin" Value="ドリンク"> ドリンク<BR>
-            <INPUT TYPE="radio" NAME="kanshin" Value="洗い物"> 洗い物<BR>
-            <INPUT TYPE="radio" NAME="kanshin" Value="その他・分からない"> その他・分からない<BR>
-        </div>
+       
 
          <p class="mt-3">◆ ご希望の連絡方法を教えて下さい</p>
        
-            <div> <INPUT TYPE="radio" NAME="how" Value="電話希望"> 電話希望</div>     
-             <div><INPUT TYPE="radio" NAME="how" Value="LINEメッセージ希望"> LINEメッセージ希望</div>
              <div><INPUT TYPE="radio" NAME="how" Value="どちらでもいい"> どちらでもいい</div>
+             <div> <INPUT TYPE="radio" NAME="how" Value="電話希望"> 電話希望</div>     
+             <div><INPUT TYPE="radio" NAME="how" Value="LINEメッセージ希望"> LINEメッセージ希望</div>
         
                 
         <p class="mt-3">◆ 面談希望日があれば、選択してください（任意）</p>
