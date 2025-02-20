@@ -14,9 +14,11 @@ $(function () {
         var kanshin = $("input:radio[name='kanshin']:checked").val();
         var how = $("input:radio[name='how']:checked").val();
         var where = $("input:radio[name='where']:checked").val();
-        var date = $('input[name="date"]').val();
+        var date1 = $('input[name="date1"]').val();
+        var date2 = $('input[name="date2"]').val();
+        var date3 = $('input[name="date3"]').val();
        
-        var msg = `◆回答ありがとうございます\nお名前：${name}\n年代：${age}\n面談希望日：${date}`;
+        var msg = `◆回答ありがとうございます\nお名前：${name}\n年代：${age}\n面談希望日：${date1},${date2},${date3}`;
         sendText(msg);
 
         return false;
