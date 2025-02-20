@@ -16,7 +16,7 @@ $(function () {
         var where = $("input:radio[name='where']:checked").val();
         var date = $('input[name="date"]').val();
        
-        var msg = `◆回答ありがとうございます\n年代：${age}\n面談希望日：${date}`;
+        var msg = `◆回答ありがとうございます\nお名前：${name}\n年代：${age}\n面談希望日：${date}`;
         sendText(msg);
 
         return false;
